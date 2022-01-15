@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> HTML DOM</title>
+    <meta charset="utf-8">
+</head>
+
+<body id="body">
+    
+    <button id="change" >Change Color</button>
+    <br/>
+    <button id="btn">0</button>
+
+</body>
+<script>
+//BT1
+const btnChange = document.getElementById("change")
+const body = document.getElementById("body")
+
+body.style.textAlign= "center"
+btnChange.onclick = function(){
+    body.style.backgroundColor = "pink"
+}
+
+//BT2
+const btn = document.getElementById("btn");
+btn.style.width = "96px";
+btn.style.height ="48px";
+btn.style.fontSize = "24px";
+let x = Number(btn.innerHTML)
+btn.onclick =function(){
+    x += 1;
+    btn.innerHTML = x;
+}
+
+</script>
+
+</html>
